@@ -1,4 +1,4 @@
-# sampling_counterexample_search_0c3c0a9e
+# eval_difficulty_strata_counterexample_search
 
 （评测难度分层场景）评测难度分层的分数该怎么读才不会被误用？用抽样与样本量分析标注它能说明什么、不能说明什么。
 
@@ -15,9 +15,9 @@
 仅依赖 Python 标准库。
 
 ```bash
-python sampling_counterexample_search_0c3c0a9e.py --help
-python sampling_counterexample_search_0c3c0a9e.py --input sample.txt
-python sampling_counterexample_search_0c3c0a9e.py --input sample.txt --json
+python eval_difficulty_strata_counterexample_search.py --help
+python eval_difficulty_strata_counterexample_search.py --input sample.txt
+python eval_difficulty_strata_counterexample_search.py --input sample.txt --json
 ```
 
 输入文件按行解析。协议「反例搜索」使用分隔符 `（无）` 区分标签与载荷。
@@ -50,7 +50,7 @@ python sampling_counterexample_search_0c3c0a9e.py --input sample.txt --json
 ## 复现步骤
 
 1. 按上面的分隔符准备输入文件，每行一条样本；
-2. 运行 `python sampling_counterexample_search_0c3c0a9e.py --input sample.txt --json`；
+2. 运行 `python eval_difficulty_strata_counterexample_search.py --input sample.txt --json`；
 3. 记录运行环境、输入文件与完整输出；
 4. **未运行的指标不要引用**：本仓库只提供测量方法与判定规则，
    不预填任何实测数字。填入实测值前请确认对应命令与输入一致。
